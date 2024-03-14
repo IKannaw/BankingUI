@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
                 )
                 {
-                   HomeScreem()
+                    HomeScreem()
                 }
             }
         }
@@ -59,11 +59,11 @@ fun HomeScreem() {
                 .fillMaxSize()
                 .padding(padding)
         ) {
-       WalletSection()
-       CardSection()
+            WalletSection()
+            CardSection()
             Spacer(modifier = Modifier.height(13.dp))
-             FinaceSection()
-//        CurrenciesSection()
+            FinaceSection()
+            CurrenciesSection()
         }
     }
 }

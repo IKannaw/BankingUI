@@ -76,7 +76,6 @@ fun FinaceItem(index: Int) {
     if (index == finaceList.size - 1) {
         lastPaddingEnd = 16.dp
     }
-
     Box(modifier = Modifier.padding(start = 16.dp, end = lastPaddingEnd)) {
         Column(
             modifier = Modifier
@@ -87,7 +86,6 @@ fun FinaceItem(index: Int) {
                 .padding(13.dp),
             verticalArrangement = Arrangement.SpaceBetween
         ) {
-
             Box(
                 modifier = Modifier
                     .clip(RoundedCornerShape(16.dp))
