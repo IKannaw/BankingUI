@@ -9,6 +9,7 @@ val Pink80 = Color(0xFFEFB8C8)
 val PurpleStart = Color(0xFFD24BE9)
 val PurpleEnd = Color(0xFFDF8FEC)
 
+
 val BlueStart = Color(0xFF2196F3)
 val BlueEnd = Color(0xFF79C3FD)
 
