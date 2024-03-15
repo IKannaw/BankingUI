@@ -1,6 +1,5 @@
 package com.example.bankingapp
 
-import android.widget.Space
 import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -16,7 +15,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -46,7 +44,7 @@ import androidx.compose.ui.unit.sp
 import com.example.bankingapp.data.Currency
 import com.example.bankingapp.ui.theme.GreenStart
 
-val currencies = listOf<Currency>(
+val currencies = listOf(
     Currency(
         name = "USD", buy = 23.35f, sell = 23.25f, icon = Icons.Rounded.AttachMoney
     ),
@@ -93,10 +91,10 @@ fun CurrenciesSection() {
                     .background(MaterialTheme.colorScheme.secondary)
                     .clickable {
                         isVisible = !isVisible
-                        if (isVisible) {
-                            iconState = Icons.Rounded.KeyboardArrowUp
+                        iconState = if (isVisible) {
+                            Icons.Rounded.KeyboardArrowUp
                         } else {
-                            iconState = Icons.Rounded.KeyboardArrowDown
+                            Icons.Rounded.KeyboardArrowDown
                         }
                     }) {
                     Icon(
@@ -159,7 +157,7 @@ fun CurrenciesSection() {
 
                         LazyColumn {
                             items(currencies.size) { index ->
-                                CurrencyItem(index, width);
+                                CurrencyItem(index, width)
                             }
                         }
                     }
@@ -171,7 +169,7 @@ fun CurrenciesSection() {
 
 @Composable
 fun CurrencyItem(index: Int, width: Dp) {
-    var currency = currencies[index]
+    val currency = currencies[index]
     Row(
         modifier = Modifier
             .fillMaxWidth()
