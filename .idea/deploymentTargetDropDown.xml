@@ -5,6 +5,9 @@
       <entry key="CardSection">
         <State />
       </entry>
+      <entry key="CurrenciesSection">
+        <State />
+      </entry>
       <entry key="FinaceSection">
         <State>
           <runningDeviceTargetSelectedWithDropDown>
@@ -22,7 +25,20 @@
         </State>
       </entry>
       <entry key="app">
-        <State />
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\ASUS\.android\avd\pixel_5_-_api_31.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-03-15T07:30:29.774583500Z" />
+        </State>
       </entry>
     </value>
   </component>
